@@ -1,0 +1,35 @@
+#!/bin/bash
+
+echo "http://smpd.sktelecom.com"
+curl http://smpd.sktelecom.com/comm-activation/api/v1/active/bff
+echo ""
+echo "http://smpapid.sktelecom.com:7080"
+curl http://smpapid.sktelecom.com:7080/comm-activation/api/v1/active/bff
+echo ""
+echo "http://smps.sktelecom.com"
+curl http://smps.sktelecom.com/comm-activation/api/v1/active/bff
+echo ""
+echo "https://smps.sktelecom.com"
+curl https://smps.sktelecom.com/comm-activation/api/v1/active/bff
+echo ""
+echo "https://smpapis.sktelecom.com:7443"
+curl https://smpapis.sktelecom.com:7443/comm-activation/api/v1/active/bff
+echo ""
+echo "http://msmps.sktelecom.com:8080"
+curl http://msmps.sktelecom.com:8080/comm-activation/api/v1/active/bff
+echo ""
+echo "https://msmps.sktelecom.com:8443"
+curl https://msmps.sktelecom.com:8443/comm-activation/api/v1/active/bff
+echo ""
+echo "http://msmps.sktelecom.com:9080"
+curl http://msmps.sktelecom.com:9080/comm-activation/api/v1/active/bff
+echo ""
+echo "http://msmps.sktelecom.com:9443"
+curl https://msmps.sktelecom.com:9443/comm-activation/api/v1/active/bff
+echo ""
+echo "http://smpexs.sktelecom.com"
+curl http://smpexs.sktelecom.com/comm-activation/api/v1/active/bff
+echo ""
+echo "https://smpexs.sktelecom.com"
+curl https://smpexs.sktelecom.com/comm-activation/api/v1/active/bff
+echo ""

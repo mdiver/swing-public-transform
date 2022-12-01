@@ -1,0 +1,19 @@
+echo "http://smps.sktelecom.com"
+curl http://smps.sktelecom.com/comm-activation/api/v1/active/bff
+echo ""
+echo "https://smps.sktelecom.com"
+curl https://smps.sktelecom.com/comm-activation/api/v1/active/bff
+echo ""
+echo "https://msmps.sktelecom.com:8443"
+curl https://msmps.sktelecom.com:8443/comm-activation/api/v1/active/bff -H"Host: msmps.sktelecom.com"
+echo ""
+echo "http://msmps.sktelecom.com:9443"
+curl https://msmps.sktelecom.com:9443/comm-activation/api/v1/active/bff -H"Host: msmps.sktelecom.com"
+echo ""
+echo "http://smpexs.sktelecom.com"
+curl http://smpexs.sktelecom.com/comm-activation/api/v1/active/bff -H"Host: smps.sktelecom.com"
+echo ""
+echo "https://smpexs.sktelecom.com"
+curl https://smpexs.sktelecom.com/comm-activation/api/v1/active/bff -H"Host: smps.sktelecom.com"
+echo ""
+

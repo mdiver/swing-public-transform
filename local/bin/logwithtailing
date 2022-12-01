@@ -1,0 +1,21 @@
+#!/bin/bash
+if (( "$#" == 2 )) 
+then
+    name=$2
+    index=0
+    line=500
+elif (( "$#" == 3 )) 
+then
+    name=$2
+    index=0
+    line=$3
+elif (( "$#" == 4 )) 
+then
+    name=$2
+    index=$3
+    line=$4
+else 
+    echo "The number of arguments should be less than 3"
+fi
+
+kubectl logs -f $(kubectl get pods -l=app=$name -o=jsonpath="{.items[$index].metadata.name}") --tail $line 
